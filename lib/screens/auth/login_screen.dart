@@ -21,7 +21,7 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.primaryDark,
+      backgroundColor: AppColors.nightBackground,
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(24.0),

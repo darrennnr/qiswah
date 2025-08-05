@@ -66,7 +66,7 @@ class _MainScreenState extends State<MainScreen> {
             });
           },
           type: BottomNavigationBarType.fixed,
-          backgroundColor: AppColors.primaryDark,
+          backgroundColor: AppColors.nightBackground,
           selectedItemColor: AppColors.accentGold,
           unselectedItemColor: AppColors.textSecondary,
           selectedLabelStyle: const TextStyle(

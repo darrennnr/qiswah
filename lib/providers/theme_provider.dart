@@ -28,26 +28,26 @@ class ThemeProvider extends ChangeNotifier {
 
   ThemeData get _tartilTheme => ThemeData(
     useMaterial3: true,
-    colorScheme: const ColorScheme.dark(
+    colorScheme: const ColorScheme.light(
       primary: AppColors.primaryDark,
       secondary: AppColors.secondaryGreen,
       tertiary: AppColors.accentGold,
       surface: AppColors.surfaceDark,
-      background: AppColors.primaryDark,
-      onPrimary: AppColors.textWhite,
-      onSecondary: AppColors.textWhite,
-      onSurface: AppColors.textWhite,
+      background: AppColors.nightBackground,
+      onPrimary: AppColors.nightBackground,
+      onSecondary: AppColors.nightBackground,
+      onSurface: AppColors.nightBackground,
       onBackground: AppColors.textWhite,
       error: AppColors.errorRed,
     ),
-    scaffoldBackgroundColor: AppColors.primaryDark,
+    scaffoldBackgroundColor: AppColors.nightBackground,
     appBarTheme: const AppBarTheme(
-      backgroundColor: AppColors.primaryDark,
+      backgroundColor: AppColors.nightBackground,
       foregroundColor: AppColors.textWhite,
       elevation: 0,
     ),
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
-    backgroundColor: AppColors.primaryDark,
+    backgroundColor: AppColors.nightBackground,
     selectedItemColor: AppColors.accentGold,
     unselectedItemColor: AppColors.textSecondary,
     type: BottomNavigationBarType.fixed,
@@ -55,7 +55,7 @@ class ThemeProvider extends ChangeNotifier {
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
         backgroundColor: AppColors.accentGold,
-        foregroundColor: AppColors.primaryDark,
+        foregroundColor: AppColors.nightBackground,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12),
         ),
@@ -65,14 +65,14 @@ class ThemeProvider extends ChangeNotifier {
 
   ThemeData get _nightTheme => ThemeData(
     useMaterial3: true,
-    colorScheme: const ColorScheme.dark(
-      primary: AppColors.nightBackground,
+    colorScheme: const ColorScheme.light(
+      primary: AppColors.primaryDark,
       secondary: AppColors.successGreen,
       tertiary: AppColors.nightAccent,
       surface: AppColors.nightSurface,
       background: AppColors.nightBackground,
-      onPrimary: AppColors.nightText,
-      onSecondary: AppColors.nightText,
+      onPrimary: AppColors.nightBackground,
+      onSecondary: AppColors.nightBackground,
       onSurface: AppColors.nightText,
       onBackground: AppColors.nightText,
       error: AppColors.errorRed,

@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
 
 class AppColors {
-  // Tartil Classic Theme
-  static const Color primaryDark = Color(0xFF2C3E50);
-  static const Color secondaryGreen = Color(0xFF27AE60);
-  static const Color accentGold = Color(0xFFF1C40F);
-  static const Color surfaceDark = Color(0xFF34495E);
-  static const Color textWhite = Color(0xFFFFFFFF);
-  static const Color textSecondary = Color(0xFFBDC3C7);
-  static const Color successGreen = Color(0xFF2ECC71);
-  static const Color errorRed = Color(0xFFE74C3C);
+  // New Theme - Natural Green
+  static const Color primaryDark = Color(0xFF064420);
+  static const Color secondaryGreen = Color(0xFF0A5D2C);
+  static const Color accentGold = Color(0xFF8B7355);
+  static const Color surfaceDark = Color(0xFF0F5A32);
+  static const Color textWhite = Color(0xFF064420);
+  static const Color textSecondary = Color(0xFF6B7280);
+  static const Color successGreen = Color(0xFF10B981);
+  static const Color errorRed = Color(0xFFEF4444);
   
   // Night Mode Theme
-  static const Color nightBackground = Color(0xFF1E1E1E);
-  static const Color nightSurface = Color(0xFF2D2D2D);
-  static const Color nightText = Color(0xFFDADADA);
-  static const Color nightTextSecondary = Color(0xFFA0A0A0);
-  static const Color nightAccent = Color(0xFF3498DB);
+  static const Color nightBackground = Color(0xFFFDFAF6);
+  static const Color nightSurface = Color(0xFFF8F5F0);
+  static const Color nightText = Color(0xFF064420);
+  static const Color nightTextSecondary = Color(0xFF6B7280);
+  static const Color nightAccent = Color(0xFF059669);
 }
 
 class AppConstants {

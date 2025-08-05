@@ -19,7 +19,7 @@ class UsageLimitDialog extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
-      backgroundColor: AppColors.surfaceDark,
+      backgroundColor: AppColors.nightSurface,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(16),
       ),
