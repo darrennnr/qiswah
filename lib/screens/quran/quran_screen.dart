@@ -24,7 +24,6 @@ class _QuranScreenState extends State<QuranScreen> {
             child: Column(
               children: [
                 _buildHeader(),
-                _buildDisplayTypeSelector(quranProvider),
                 Expanded(child: _buildSurahList(quranProvider)),
               ],
             ),
@@ -71,62 +70,6 @@ class _QuranScreenState extends State<QuranScreen> {
     );
   }
 
-  Widget _buildDisplayTypeSelector(QuranProvider provider) {
-    return Container(
-      margin: const EdgeInsets.all(20),
-      padding: const EdgeInsets.all(4),
-      decoration: BoxDecoration(
-        color: AppColors.surfaceDark,
-        borderRadius: BorderRadius.circular(12),
-      ),
-      child: Row(
-        children: [
-          Expanded(
-            child: GestureDetector(
-              onTap: () => provider.setDisplayType('arabic'),
-              child: Container(
-                padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
-                decoration: BoxDecoration(
-                  color: provider.displayType == 'arabic' ? AppColors.secondaryGreen : Colors.transparent,
-                  borderRadius: BorderRadius.circular(8),
-                ),
-                child: Text(
-                  'Hijaiyah',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: provider.displayType == 'arabic' ? AppColors.textWhite : AppColors.textSecondary,
-                    fontSize: 14,
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
-              ),
-            ),
-          ),
-          Expanded(
-            child: GestureDetector(
-              onTap: () => provider.setDisplayType('full'),
-              child: Container(
-                padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
-                decoration: BoxDecoration(
-                  color: provider.displayType == 'full' ? AppColors.secondaryGreen : Colors.transparent,
-                  borderRadius: BorderRadius.circular(8),
-                ),
-                child: Text(
-                  'Latin & Terjemahan',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: provider.displayType == 'full' ? AppColors.textWhite : AppColors.textSecondary,
-                    fontSize: 14,
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
 
   Widget _buildSurahList(QuranProvider provider) {
     if (provider.isLoading) {

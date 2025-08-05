@@ -7,7 +7,7 @@ plugins {
 android {
     namespace = "com.example.qiswahh"
     compileSdk = 35
-    ndkVersion = "27.0.12077973"  // override ke versi yang sesuai plugin
+    ndkVersion = "28.1.13356709"  // override ke versi yang sesuai plugin
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
