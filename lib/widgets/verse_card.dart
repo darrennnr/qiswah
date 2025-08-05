@@ -33,7 +33,7 @@ class _VerseCardState extends State<VerseCard> {
       margin: const EdgeInsets.only(bottom: 16),
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        color: AppColors.surfaceDark,
+        color: AppColors.nightSurface,
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(

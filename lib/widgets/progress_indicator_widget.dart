@@ -20,7 +20,7 @@ class ProgressIndicatorWidget extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: AppColors.surfaceDark,
+        color: AppColors.nightSurface,
         borderRadius: BorderRadius.circular(12),
       ),
       child: Column(

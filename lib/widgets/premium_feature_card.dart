@@ -27,7 +27,7 @@ class PremiumFeatureCard extends StatelessWidget {
         margin: const EdgeInsets.only(bottom: 16),
         padding: const EdgeInsets.all(20),
         decoration: BoxDecoration(
-          color: AppColors.surfaceDark,
+          color: AppColors.nightSurface,
           borderRadius: BorderRadius.circular(16),
           border: isAvailable
               ? Border.all(color: AppColors.successGreen, width: 2)
